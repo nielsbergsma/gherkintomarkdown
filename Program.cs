@@ -23,7 +23,7 @@ namespace GherkinToMarkdown
                 
                 config.OnExecute(() =>
                 {
-                    Console.WriteLine("generating reading gherkin files from {1}", source.Value, destination.Value);
+                    Console.WriteLine("generating reading gherkin files from {0}, writing markdown files to {1}", source.Value, destination.Value);
                     
                     var files = Directory.GetFiles(source.Value, "*.feature");
                     var features = new List<Feature>();
